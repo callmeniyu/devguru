@@ -1,0 +1,8 @@
+.home{
+    padding: 0 2rem;
+}
+@media(max-width:500px){
+    .home{
+        padding: 0 1rem;
+    }
+}

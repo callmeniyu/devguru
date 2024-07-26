@@ -1,0 +1,20 @@
+.btn {
+    background-color: var(--theme-blue);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    width: 8rem;
+    height: 2rem;
+    padding:0.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: none;
+    transition: 0.4s;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+}
