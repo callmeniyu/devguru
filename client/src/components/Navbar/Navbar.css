@@ -56,7 +56,7 @@
     .navbar-btn {
         align-self: center;
         margin-top: 2rem;
-        animation: slidein 2s;
+        animation: btnslidein 1s;
     }
     .menu-items-off {
         display: none;
@@ -86,5 +86,14 @@
     to {
         transform: translateY(0);
         opacity: 100;
+    }
+}
+@keyframes btnslidein {
+    from {
+        transform: translateY(-80%);
+    }
+
+    to {
+        transform: translateY(0);
     }
 }
