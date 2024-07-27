@@ -1,0 +1,45 @@
+.features-navigate {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+}
+.features-navigate li a{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(152, 152, 152);
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+}
+.features-navigate li a::after {
+    content: "";
+    position: absolute;
+    bottom: -1.5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--theme-blue);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+.features-navigate li a:active::after,
+.features-navigate li a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+.features-navigate li a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+.features-navigate li a:active::after,
+.features-navigate li a:focus::after {
+    transform: scale(1);
+}
+.features hr{
+    border: 0.8px solid rgb(234, 234, 234);
+}
+
