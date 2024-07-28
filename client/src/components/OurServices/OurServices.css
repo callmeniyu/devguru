@@ -22,13 +22,12 @@
     justify-content: space-between;
     padding:1rem 1rem;
     border-radius: 5px;
+    border: 5px solid inherit; 
     border-bottom: 5px solid white;
 }
-/* .services-item a:hover{
-    background-color: var(--theme-blue);
-    color: white;
-    border-bottom: 5px solid #aca1fc;
-} */
+.services-item a:hover{
+    background-color: rgb(226, 226, 226);
+}
 .services-item a:focus{
     background-color: var(--theme-blue);
     color: white;
@@ -98,6 +97,9 @@
     }
     .services-item {
         min-width: fit-content;
+    }
+    .right-arrow{
+        display: none !important;
     }
 }
 @media (max-width:630px){
