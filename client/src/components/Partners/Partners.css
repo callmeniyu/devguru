@@ -1,0 +1,41 @@
+.partners {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+    overflow: hidden;
+}
+.partners-top,
+.partners-bottom {
+    display: flex;
+    gap: 2rem;
+}
+.partners-top {
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee-l 10s linear infinite;
+}
+.partners-bottom {
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee-r 10s linear infinite;
+}
+
+@keyframes marquee-l {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-20%);
+    }
+}
+
+@keyframes marquee-r {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(20%);
+    }
+}
