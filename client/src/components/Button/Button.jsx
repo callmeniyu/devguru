@@ -4,7 +4,7 @@ import "./Button.css"
 const Button = (props) => {
   let classes = props.className
   return (
-    <Link className={`btn ${classes}`} to="#">Book Now!</Link>
+    <Link className={`btn ${classes}`} to="#">Book Now!  <span></span><span></span><span></span><span></span></Link>
   )
 }
 

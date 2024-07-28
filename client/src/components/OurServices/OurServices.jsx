@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react"
 import Listelement from "../Listelement/Listelement"
 import { services } from "../../utils/data"
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import { motion } from "framer-motion"
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight"
 import "./OurServices.css"
-import service_img_webdevelopment from "../../assets/images/service_img_webdevelopment.png"
+import { duration } from "@mui/material"
 
 const Ourservices = () => {
     const [title, setTitle] = useState("Web Development")
@@ -14,6 +15,38 @@ const Ourservices = () => {
     }
     const currentService = services.find((service) => service.title == title)
 
+    const rightVariants = {
+        initial: {
+            x: -60,
+            opacity: 0,
+        },
+        animate: {
+            x: 0,
+            opacity: 1,
+            transition: { type: "spring", stiffness: 150, damping: 20, duration: 3 },
+        },
+        exit: {
+            x: 200,
+            opacity: 0,
+        },
+    }
+
+    const imgVariant = {
+        initial: {
+            x: -50,
+            opacity: 0,
+        },
+        animate: {
+            x: 0,
+            opacity: 1,
+            transition: { type: "spring", stiffness: 150, damping: 20, duration: 1, delay:0.2 }, // Add a delay of 2 seconds
+        },
+        exit: {
+            x: 200,
+            opacity: 0,
+        },
+    }
+
     useEffect(() => {
         console.log(title)
     })
@@ -21,42 +54,49 @@ const Ourservices = () => {
         <div className="services">
             <h3 className="section-header">Services</h3>
             <div className="services-main">
-                    <ul className="services-left">
-                        <li className="services-item">
-                            <a href="#" onClick={(e) => handleTitle(e)} name="Web Development">
-                                Web Development <KeyboardArrowRightIcon className="right-arrow"/>
-                            </a>
-                        </li>
-                        <li className="services-item">
+                <ul className="services-left">
+                    <li className="services-item">
+                        <a href="#" onClick={(e) => handleTitle(e)} name="Web Development">
+                            Web Development <KeyboardArrowRightIcon className="right-arrow" />
+                        </a>
+                    </li>
+                    <li className="services-item">
                         <a href="#" onClick={(e) => handleTitle(e)} name="Web Design">
-                                Web Design <KeyboardArrowRightIcon className="right-arrow"/>
-                            </a>
-                        </li>
-                        <li className="services-item">
-                            <a href="#" name="UI/UX Design (using Figma)" onClick={(e)=>handleTitle(e)}>
-                                UI/UX Design (using Figma) <KeyboardArrowRightIcon className="right-arrow"/>
-                            </a>
-                        </li>
-                        <li className="services-item">
-                            <a href="#" name="Mobile App Development" onClick={(e)=>handleTitle(e)}>
-                                Mobile App Development <KeyboardArrowRightIcon className="right-arrow"/>
-                            </a>
-                        </li>
-                        <li className="services-item">
-                            <a href="#" name="Digital Poster Creation" onClick={(e)=>handleTitle(e)}>
-                                Digital Poster Creation <KeyboardArrowRightIcon className="right-arrow"/>
-                            </a>
-                        </li>
-                        <li className="services-item">
-                            <a href="#" name="Video Production and Editing" onClick={(e)=>handleTitle(e)}>
-                                Video Production and Editing <KeyboardArrowRightIcon className="right-arrow"/>
-                            </a>
-                        </li>
-                    </ul>
-                <div className="services-right">
+                            Web Design <KeyboardArrowRightIcon className="right-arrow" />
+                        </a>
+                    </li>
+                    <li className="services-item">
+                        <a href="#" name="UI/UX Design (using Figma)" onClick={(e) => handleTitle(e)}>
+                            UI/UX Design (using Figma) <KeyboardArrowRightIcon className="right-arrow" />
+                        </a>
+                    </li>
+                    <li className="services-item">
+                        <a href="#" name="Mobile App Development" onClick={(e) => handleTitle(e)}>
+                            Mobile App Development <KeyboardArrowRightIcon className="right-arrow" />
+                        </a>
+                    </li>
+                    <li className="services-item">
+                        <a href="#" name="Digital Poster Creation" onClick={(e) => handleTitle(e)}>
+                            Digital Poster Creation <KeyboardArrowRightIcon className="right-arrow" />
+                        </a>
+                    </li>
+                    <li className="services-item">
+                        <a href="#" name="Video Production and Editing" onClick={(e) => handleTitle(e)}>
+                            Video Production and Editing <KeyboardArrowRightIcon className="right-arrow" />
+                        </a>
+                    </li>
+                </ul>
+                <motion.div
+                    className="services-right"
+                    variants={rightVariants}
+                    initial="initial"
+                    animate="animate"
+                    exit="exit"
+                    key={currentService.id}
+                >
                     <div className="services-right-details">
                         <p className="services-right-description">
-                        <h3> { currentService.title }</h3>
+                            <h3> {currentService.title}</h3>
                             {currentService.description}
                         </p>
                         <div className="list-elements-div">
@@ -64,13 +104,21 @@ const Ourservices = () => {
                             <Listelement text={currentService.points[1]} />
                             <Listelement text={currentService.points[2]} />
                             <Listelement text={currentService.points[3]} />
-
                         </div>
                     </div>
                     <div className="services-right-img">
-                        <img src={currentService.img} alt="services-right-img"  className="service-img"/>
+                        <motion.img
+                            className="service-img"
+                            src={currentService.img}
+                            variants={imgVariant}
+                            initial="initial"
+                            animate="animate"
+                            exit="exit"
+                            key={currentService.id}
+                            alt="services-right-img"
+                        />
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )

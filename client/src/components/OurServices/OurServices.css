@@ -24,7 +24,12 @@
     border-radius: 5px;
     border-bottom: 5px solid white;
 }
-.services-item a:hover{
+/* .services-item a:hover{
+    background-color: var(--theme-blue);
+    color: white;
+    border-bottom: 5px solid #aca1fc;
+} */
+.services-item a:focus{
     background-color: var(--theme-blue);
     color: white;
     border-bottom: 5px solid #aca1fc;
