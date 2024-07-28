@@ -14,10 +14,6 @@ const Features = () => {
     
     const currentFeature = features.find((feature) => feature.title == title)
 
-    useEffect(() => {
-        console.log(currentFeature)
-    })
-
     const variants = {
         initial: {
             opacity:1

@@ -4,10 +4,16 @@ import feature_img_scalable from "../assets/svg/feature_img_scalable.svg"
 import feature_img_secure from "../assets/svg/feature_img_secure.svg"
 import feature_img_timebound from "../assets/svg/feature_img_timebound.svg"
 import feature_img_innovative from "../assets/svg/feature_img_innovative.svg"
+import service_img_webdevelopment from "../assets/images/service_img_webdevelopment.png"
+import service_img_design from "../assets/images/service_img_design.png"
+import service_img_uiux from "../assets/images/service_img_uiux.png"
+import service_img_mobiledesign from "../assets/images/service_img_mobiledesign.png"
+import service_img_digitalposter from "../assets/images/service_img_digitalposter.png"
+import service_img_videography from "../assets/images/service_img_videography.png"
 
 export const features = [
     {
-        id:1,
+        id: 1,
         title: "Proffesional",
         description:
             "We deliver exceptionally professional services that not only meet but exceed your expectations, ensuring your complete satisfaction.",
@@ -20,7 +26,7 @@ export const features = [
         img: feature_img_proffesional,
     },
     {
-        id:2,
+        id: 2,
         title: "Cost-Effective",
         description:
             "We provide high-quality web solutions that maximize your return on investment, ensuring you get the best value for your budget.",
@@ -34,7 +40,7 @@ export const features = [
         img: feature_img_costeffective,
     },
     {
-        id:3,
+        id: 3,
         title: "Scalable",
         description:
             "We build flexible web solutions designed to grow and evolve with your business, ensuring long-term success and adaptability.",
@@ -48,7 +54,7 @@ export const features = [
         img: feature_img_scalable,
     },
     {
-        id:4,
+        id: 4,
         title: "Secure",
         description:
             "We prioritize the protection of your data and systems, implementing robust security measures to safeguard your digital assets.",
@@ -61,7 +67,7 @@ export const features = [
         img: feature_img_secure,
     },
     {
-        id:5,
+        id: 5,
         title: "Time-Bound",
         description:
             "We deliver high-quality web solutions within agreed timelines, ensuring your project launches on schedule and meets your business objectives.",
@@ -75,7 +81,7 @@ export const features = [
         img: feature_img_timebound,
     },
     {
-        id:6,
+        id: 6,
         title: "Innovative",
         description:
             "We leverage modern technologies and creative problem-solving to deliver forward-thinking web solutions that keep you ahead of the curve.",
@@ -86,5 +92,80 @@ export const features = [
             "Use of low-code/no-code platforms for rapid prototyping and development",
         ],
         img: feature_img_innovative,
+    },
+]
+
+export const services = [
+    {
+        id: 1,
+        title: "Web Development",
+        description:
+            "Enhance your online presence with bespoke websites designed to meet your unique needs. At guruDev, we transform your vision into reality using the latest technology and a user-centric approach.",
+        points: ["User-centric design", "SEO optimization", "Content management systems", "Scalable and flexible"],
+        img: service_img_webdevelopment,
+    },
+    {
+        id: 2,
+        title: "Web Design",
+        description:
+            "Enhance your online presence with bespoke websites designed to meet your unique needs. At guruDev, we transform your vision into reality using the latest technology and a user-centric approach.",
+        points: [
+            "Visually appealing and brand-aligned designs",
+            "Intuitive navigation and user interface",
+            "Fully responsive and mobile-friendly websites",
+            "Consistent design across all pages",
+        ],
+        img: service_img_design,
+    },
+    {
+        id: 3,
+        title: "UI/UX Design (using Figma)",
+        description:
+            "Craft intuitive and visually appealing user interfaces that enhance user satisfaction and boost engagement across all digital platforms.",
+        points: [
+            "Empathetic Design.",
+            "Well-structured design systems and reusable components.",
+            "Incorporate stakeholder and user feedback efficiently.",
+            "High-fidelity prototypes that provide a real-world feel.",
+        ],
+        img: service_img_uiux,
+    },
+    {
+        id: 4,
+        title: "Mobile App Development",
+        description:
+            "Extend your reach with powerful, feature-rich mobile applications for Androids. Gurudev gives you apps that users love and businesses rely on.",
+        points: [
+            "Native and cross-platform app development.",
+            "Regular updates and maintenance support.",
+            "Customized development approach.",
+            "Robust security measures.",
+        ],
+        img: service_img_mobiledesign,
+    },
+    {
+        id: 5,
+        title: "Digital Poster Creation",
+        description: "Capture attention and convey your message effectively with devguru's eye-catching digital posters.",
+        points: [
+            "Sharp and professional.",
+            "No compromising on quality.",
+            "Design targeting the audience.",
+            "Interactive elements.",
+        ],
+        img: service_img_digitalposter,
+    },
+    {
+        id: 6,
+        title: "Video Production and Editing",
+        description:
+            "Bring your stories to life with devguru's professional video content that engages, informs, and inspires your audience across all digital channels.",
+        points: [
+            "Craft polished and captivating videos with expert editing.",
+            "Motion Graphics and Special Effects.",
+            "Stunning visuals with experienced videographers.",
+            "Capture the essence of your events and highlight reels.",
+        ],
+        img: service_img_videography,
     },
 ]
