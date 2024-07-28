@@ -7,6 +7,7 @@ import feature_img_innovative from "../assets/svg/feature_img_innovative.svg"
 
 export const features = [
     {
+        id:1,
         title: "Proffesional",
         description:
             "We deliver exceptionally professional services that not only meet but exceed your expectations, ensuring your complete satisfaction.",
@@ -19,6 +20,7 @@ export const features = [
         img: feature_img_proffesional,
     },
     {
+        id:2,
         title: "Cost-Effective",
         description:
             "We provide high-quality web solutions that maximize your return on investment, ensuring you get the best value for your budget.",
@@ -32,6 +34,7 @@ export const features = [
         img: feature_img_costeffective,
     },
     {
+        id:3,
         title: "Scalable",
         description:
             "We build flexible web solutions designed to grow and evolve with your business, ensuring long-term success and adaptability.",
@@ -45,6 +48,7 @@ export const features = [
         img: feature_img_scalable,
     },
     {
+        id:4,
         title: "Secure",
         description:
             "We prioritize the protection of your data and systems, implementing robust security measures to safeguard your digital assets.",
@@ -57,6 +61,7 @@ export const features = [
         img: feature_img_secure,
     },
     {
+        id:5,
         title: "Time-Bound",
         description:
             "We deliver high-quality web solutions within agreed timelines, ensuring your project launches on schedule and meets your business objectives.",
@@ -70,6 +75,7 @@ export const features = [
         img: feature_img_timebound,
     },
     {
+        id:6,
         title: "Innovative",
         description:
             "We leverage modern technologies and creative problem-solving to deliver forward-thinking web solutions that keep you ahead of the curve.",
