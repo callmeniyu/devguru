@@ -1,6 +1,5 @@
 .workprocess{
     margin-top: 26rem;
-    padding-bottom: 10rem;
 }
 .wrapper {
     display: flex;
@@ -71,6 +70,9 @@
   }
 
   @media(max-width:780px){
+    .workprocess{
+      margin-top: 35rem;
+    }
     .workprocess-step-l, .workprocess-step-r{
       flex-direction: column;
       align-items: start;

@@ -7,6 +7,7 @@ import Partners from '../../components/Partners/Partners'
 import OurServices from '../../components/OurServices/OurServices'
 import Technologies from '../../components/Technologies/Technologies'
 import WorkProcess from '../../components/WorkProcess/WorkProcess'
+import Team  from "../../components/Team/Team"
 const Home = () => {
   return (
       <div className='home'>
@@ -17,6 +18,7 @@ const Home = () => {
       <OurServices />
       <Technologies />
       <WorkProcess />
+      <Team />
     </div>
   )
 }
