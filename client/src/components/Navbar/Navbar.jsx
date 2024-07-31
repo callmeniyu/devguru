@@ -19,7 +19,7 @@ const Navbar = () => {
             <li><Link className='navbar-item'>Team</Link><hr /></li>
             <li><Link className='navbar-item'>Work Process</Link><hr /></li>
         </ul>
-      <Button className={`navbar-btn ${menuToggled ? "menu-btn-on" : "menu-btn-off"  }`}/>
+      <Button className={`navbar-btn ${menuToggled ? "menu-btn-on" : "menu-btn-off"  }`} text="Book Now!"/>
       <MenuIcon fontSize='large' className={`navbar-menu-icon ${menuToggled ? "menu-icon-on" : ""  }`} onClick={ ()=>setmMenuToggled(prev => !prev)} />
     </div>
   )

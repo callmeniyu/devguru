@@ -1,12 +1,14 @@
 .team{
     position: relative;
-    bottom: 10rem;
+    bottom: 14rem;
+    padding-bottom: 2rem;
 }
 .team-carousel{
     padding: 0;
     
 }
-.react-responsive-3d-carousel__carousel__item {
-    box-shadow: rgb(243, 240, 255,0.75) 2px 10px 15px 10px !important;
-
+@media(max-width:600px){
+    .splide-container{
+        margin-left: 0rem !important;
+    }
 }

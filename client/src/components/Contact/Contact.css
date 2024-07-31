@@ -1,0 +1,116 @@
+.contact {
+    margin-top: 5rem;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.contact-wrapper {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    border: 6px solid;
+    border-radius: 5px;
+    border-color: var(--theme-blue);
+    gap: 3rem;
+    width: 80%;
+    align-items: center;
+}
+.contact-inputs {
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+}
+.contact-inputs-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 2rem;
+}
+.contact-inputs-left input,
+.contact-inputs-right input {
+    display: flex;
+    height: 3rem;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+}
+.contact-inputs-left input:focus,
+.contact-inputs-right input:focus {
+    outline: none;
+}
+.contact-inputs-left input::placeholder,
+.contact-inputs-right input::placeholder {
+    font-size: 1rem;
+}
+.contact-inputs-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 2rem;
+}
+.contact-inputs-right textarea {
+    height: 12rem;
+    font-family: "poppins";
+    background-color: #f7f7f7;
+    border-radius: 3px;
+    border: none;
+}
+.contact-inputs-right textarea::placeholder {
+    font-size: 1rem;
+    padding: 1rem;
+}
+.contact-inputs-right textarea:focus {
+    outline: none;
+}
+.contact-send-btn {
+    font-size: 1.1rem;
+}
+.contact-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.contact-gmail,
+.contact-whatsapp,
+.contact-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: black;
+    width: inherit;
+}
+@media (max-width: 770px) {
+    .contact{
+        padding:0 2rem;
+    }
+    .contact-wrapper {
+        min-width: 100%;
+        padding: 2rem;
+    }
+    .contact-inputs {
+        flex-direction: column;
+    }
+    .contact-inputs-left,
+    .contact-inputs-right {
+        width: 100%;
+    }
+    .contact-gmail,
+    .contact-whatsapp,
+    .contact-phone {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 650px) {
+    .contact-icons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .contact .section-header{
+        width: 120%;
+    }
+}

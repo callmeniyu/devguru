@@ -1,11 +1,12 @@
 .idcard{
     display: flex;
     justify-content: center;
-    width: 17rem;
-    padding:2rem 0;
-    padding-right: 3.5rem;
+    width: 19rem;
+    padding-left: 1rem;
+    padding:2rem;
     background-color: white;
     border-radius: 5px;
+    gap: 1rem;
     box-shadow: rgb(243, 240, 255,0.7) 5px 5px 15px 10px !important;
 }
 .idcard-left{

@@ -1,0 +1,16 @@
+.testimonials{
+    margin-top: 18rem;
+}
+.react-responsive-3d-carousel__carousel__item {
+    box-shadow: rgb(243, 240, 255,0.75) 2px 10px 15px 10px !important;
+    background-color: white;
+}
+@media (max-width:600px){
+    .testimonials{
+        margin-top: 30rem;
+    }
+    .react-responsive-3d-carousel__carousel__item {
+        box-shadow: rgb(243, 240, 255,0.75) 2px 10px 15px 10px !important;
+        height: 22rem !important;
+    }
+}

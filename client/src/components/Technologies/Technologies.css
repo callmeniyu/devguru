@@ -83,7 +83,7 @@
     .technology{
         padding-right: 1rem;
         padding-left: 1rem;
-        max-width: 100vw;
+        right: 0;
     }
     .technology-logo{
         width: 3rem;

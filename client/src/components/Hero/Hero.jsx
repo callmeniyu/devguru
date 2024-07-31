@@ -17,7 +17,7 @@ const Hero = () => {
                     <span className="hero-left-p-span">web solutions</span> and services that turn your digital dreams into
                     measurable, real-world success stories.
                 </p>
-                <Button />
+                <Button text="Book Now!"/>
             </div>
             <div className="hero-right">
                 <Tilt>

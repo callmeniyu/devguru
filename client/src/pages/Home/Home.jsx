@@ -7,7 +7,10 @@ import Partners from '../../components/Partners/Partners'
 import OurServices from '../../components/OurServices/OurServices'
 import Technologies from '../../components/Technologies/Technologies'
 import WorkProcess from '../../components/WorkProcess/WorkProcess'
-import Team  from "../../components/Team/Team"
+import Team from "../../components/Team/Team"
+import BookNow from "../../components/BookNow/BookNow"
+import Testimonials from '../../components/Testimonials/Testimonials'
+import Contact from '../../components/Contact/Contact'
 const Home = () => {
   return (
       <div className='home'>
@@ -19,6 +22,9 @@ const Home = () => {
       <Technologies />
       <WorkProcess />
       <Team />
+      <BookNow />
+      <Testimonials />
+      <Contact />
     </div>
   )
 }

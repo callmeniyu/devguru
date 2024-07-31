@@ -1,0 +1,40 @@
+.testimonialcard{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    width: 23rem;
+    padding-bottom: 1rem;
+    gap: 1.5rem;
+}
+.quotation-icon-start{
+    transform: rotate(180deg);
+}
+.testimonialcard-text{
+    width: 90%;
+    font-size: 1rem;
+}
+.testimonialcard-author{
+    display: flex;
+    gap: 1rem;
+}
+.testimonialcard-author-img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+.testimonialcard-author-right p{
+    color: rgb(69, 69, 69);
+    font-weight: 550;
+}
+@media (max-width:600px) {
+    .testimonialcard-text{
+        width: 70%;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    .testimonialcard{
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+    }
+}

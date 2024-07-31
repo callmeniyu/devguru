@@ -17,6 +17,9 @@
     background-color: black;
     color: white;
 }
+.intimate-btn{
+    width: 10rem;
+}
 .btn{
     --c: black;
     border-radius: 0.5em;
@@ -24,6 +27,12 @@
     overflow: hidden;
     z-index: 1;
     transition: 0.5s;
+}
+.black-btn{
+    --c: var(--theme-blue);
+}
+.black-btn span{
+    background-color: var(--c);
 }
 
 .btn span {
@@ -64,4 +73,10 @@
 }
 .btn span:nth-child(5) {
     --n: 5;
+}
+
+@media(min-width:950px){
+    .intimate-btn{
+        min-width: fit-content;
+    }
 }
