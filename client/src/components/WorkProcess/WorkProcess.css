@@ -69,6 +69,11 @@
     box-shadow: rgb(243, 240, 255,0.7) 5px 5px 15px 10px;
   }
 
+  @media (min-width:1930px){
+    .workprocess{
+        padding-top: 4rem;
+    }
+}
   @media(max-width:780px){
     .workprocess{
       margin-top: 35rem;

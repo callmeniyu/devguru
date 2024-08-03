@@ -11,6 +11,7 @@ import Team from "../../components/Team/Team"
 import BookNow from "../../components/BookNow/BookNow"
 import Testimonials from '../../components/Testimonials/Testimonials'
 import Contact from '../../components/Contact/Contact'
+import Footer from "../../components/Footer/Footer"
 const Home = () => {
   return (
       <div className='home'>
@@ -25,6 +26,7 @@ const Home = () => {
       <BookNow />
       <Testimonials />
       <Contact />
+      <Footer />
     </div>
   )
 }

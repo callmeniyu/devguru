@@ -38,7 +38,12 @@
 .technology-logo:hover {
     transform: rotateY(180deg);
 }
-
+@media (min-width:1930px){
+    .technology{
+        padding:4rem 10rem;
+        padding-bottom: 6rem;
+    }
+}
 @media(max-width:980px){
     .technology{
         gap: 1rem;
