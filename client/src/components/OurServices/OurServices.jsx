@@ -61,8 +61,8 @@ const Ourservices = () => {
                         </a>
                     </li>
                     <li className="services-item">
-                        <a href="#" onClick={(e) => handleTitle(e)} name="Web Design">
-                            Web Design <KeyboardArrowRightIcon className="right-arrow" />
+                        <a href="#" onClick={(e) => handleTitle(e)} name="Frontent Development">
+                        Frontent Development <KeyboardArrowRightIcon className="right-arrow" />
                         </a>
                     </li>
                     <li className="services-item">
@@ -76,13 +76,13 @@ const Ourservices = () => {
                         </a>
                     </li>
                     <li className="services-item">
-                        <a href="#" name="Digital Poster Creation" onClick={(e) => handleTitle(e)}>
-                            Digital Poster Creation <KeyboardArrowRightIcon className="right-arrow" />
+                        <a href="#" name="SaaS Sevices" onClick={(e) => handleTitle(e)}>
+                            SaaS Sevices <KeyboardArrowRightIcon className="right-arrow" />
                         </a>
                     </li>
                     <li className="services-item">
-                        <a href="#" name="Video Production and Editing" onClick={(e) => handleTitle(e)}>
-                            Video Production and Editing <KeyboardArrowRightIcon className="right-arrow" />
+                        <a href="#" name="Backend Development" onClick={(e) => handleTitle(e)}>
+                            Backend Development <KeyboardArrowRightIcon className="right-arrow" />
                         </a>
                     </li>
                 </ul>

@@ -106,7 +106,7 @@ export const services = [
     },
     {
         id: 2,
-        title: "Web Design",
+        title: "Frontent Development",
         description:
             "Enhance your online presence with bespoke websites designed to meet your unique needs. At guruDev, we transform your vision into reality using the latest technology and a user-centric approach.",
         points: [
@@ -145,26 +145,27 @@ export const services = [
     },
     {
         id: 5,
-        title: "Digital Poster Creation",
-        description: "Capture attention and convey your message effectively with devguru's eye-catching digital posters.",
+        title: "SaaS Sevices",
+        description:
+            "Transform your business with scalable, cloud-based software solutions. Gurudev delivers innovative SaaS platforms that streamline operations and drive growth for companies of all sizes.",
         points: [
-            "Sharp and professional.",
-            "No compromising on quality.",
-            "Design targeting the audience.",
-            "Interactive elements.",
+            "Customizable, industry-specific SaaS solutions.",
+            "Seamless integration with existing systems.",
+            "Automatic updates and continuous improvement.",
+            "Robust data security.",
         ],
         img: service_img_digitalposter,
     },
     {
         id: 6,
-        title: "Video Production and Editing",
+        title: "Backend Development",
         description:
-            "Bring your stories to life with devguru's professional video content that engages, informs, and inspires your audience across all digital channels.",
+            "Gurudev creates efficient and secure backend systems that form the backbone of high-performing digital experiences.",
         points: [
-            "Craft polished and captivating videos with expert editing.",
-            "Motion Graphics and Special Effects.",
-            "Stunning visuals with experienced videographers.",
-            "Capture the essence of your events and highlight reels.",
+            "Custom API development and integration",
+            "Database design and optimization",
+            "Scalable architecture for high-traffic applications",
+            "Advanced security implementations and data protection",
         ],
         img: service_img_videography,
     },
