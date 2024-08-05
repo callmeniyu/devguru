@@ -39,7 +39,7 @@ const Ourservices = () => {
         animate: {
             x: 0,
             opacity: 1,
-            transition: { type: "spring", stiffness: 150, damping: 20, duration: 1, delay:0.2 }, // Add a delay of 2 seconds
+            transition: { type: "spring", stiffness: 150, damping: 20, duration: 1, delay: 0.2 }, // Add a delay of 2 seconds
         },
         exit: {
             x: 200,
@@ -54,7 +54,17 @@ const Ourservices = () => {
         <div className="services">
             <h3 className="section-header">Services</h3>
             <div className="services-main">
-                <ul className="services-left">
+                <motion.ul
+                    initial={{ y: -100, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{
+                        y: { type: "spring", stiffness: 20, duration:0.3 },
+                        opacity: { duration: 0.6 },
+                        ease: "easeIn",
+                        duration:3
+                    }}
+                    className="services-left"
+                >
                     <li className="services-item">
                         <a href="#" onClick={(e) => handleTitle(e)} name="Web Development">
                             Web Development <KeyboardArrowRightIcon className="right-arrow" />
@@ -62,7 +72,7 @@ const Ourservices = () => {
                     </li>
                     <li className="services-item">
                         <a href="#" onClick={(e) => handleTitle(e)} name="Frontent Development">
-                        Frontent Development <KeyboardArrowRightIcon className="right-arrow" />
+                            Frontent Development <KeyboardArrowRightIcon className="right-arrow" />
                         </a>
                     </li>
                     <li className="services-item">
@@ -85,7 +95,7 @@ const Ourservices = () => {
                             Backend Development <KeyboardArrowRightIcon className="right-arrow" />
                         </a>
                     </li>
-                </ul>
+                </motion.ul>
                 <motion.div
                     className="services-right"
                     variants={rightVariants}

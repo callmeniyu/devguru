@@ -10,6 +10,11 @@ import service_img_uiux from "../assets/images/service_img_uiux.png"
 import service_img_mobiledesign from "../assets/images/service_img_mobiledesign.png"
 import service_img_digitalposter from "../assets/images/service_img_digitalposter.png"
 import service_img_videography from "../assets/images/service_img_videography.png"
+import testimonial_img1 from "../assets/images/testimonial_img1.jpg"
+import testimonial_img2 from "../assets/images/testimonial_img2.jpg"
+import testimonial_img3 from "../assets/images/testimonial_img3.jpg"
+import testimonial_img4 from "../assets/images/testimonial_img4.jpg"
+import testimonial_img5 from "../assets/images/testimonial_img5.jpg"
 
 export const features = [
     {
@@ -169,4 +174,42 @@ export const services = [
         ],
         img: service_img_videography,
     },
+]
+
+export const testimonial = [
+    {
+        id: 1,
+        name: "Daniel Rodriguez",
+        company: "BrightWave Marketing",
+        img: testimonial_img1,
+        text:"devguru's team brought our vision to life with their exceptional UI/UX design services. Using Figma, they created intuitive and visually appealing interfaces that have elevated our user experience. We highly recommend devguru for anyone looking to enhance their digital presence."
+    },
+    {
+        id: 2,
+        name: "Sarah Thompson",
+        company: "TechNova Solutions",
+        img: testimonial_img2,
+        text:"Our experience with devguru for app development has been outstanding. They delivered a high-quality, cross-platform app that integrates with various device features. The regular updates ensure that our app remains top-notch. Devguru's expertise and innovative solutions have exceeded our expectations."
+    },
+    {
+        id: 3,
+        name: "Emily Johnson",
+        company: "CreativePixel Studio",
+        img: testimonial_img3,
+        text:"Working with DevGuru on our frontend development has been a fantastic experience. Their creative and technical skills brought our vision to life with a beautifully designed and highly responsive user interface.  Their collaborative approach and dedication to understanding our needs made the entire process seamless."
+    },
+    {
+        id: 4,
+        name: "Michael Patel",
+        company: "DataGenix Analytics",
+        img: testimonial_img4,
+        text:"Partnering with DevGuru for backend development has transformed our operations. Their expertise in building robust and scalable systems has significantly improved our platform's performance. The team's commitment to security and efficiency, along with their use of advanced technologies, has exceeded our expectations. We're thrilled with the results."
+    },
+    {
+        id: 5,
+        name: "James Anderson",
+        company: "ProjectPro Inc",
+        img: testimonial_img5,
+        text:"Working with devguru has been a game-changer for our business. Their expertise in web development transformed our outdated website into a modern, responsive platform that has significantly improved our user engagement. Their attention to detail and commitment to using the latest technology truly sets them apart. We couldn't be happier with the results!"
+    }
 ]

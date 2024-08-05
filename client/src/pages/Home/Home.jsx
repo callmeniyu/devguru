@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import "./Home.css"
 import Hero from '../../components/Hero/Hero'
@@ -13,19 +13,20 @@ import Testimonials from '../../components/Testimonials/Testimonials'
 import Contact from '../../components/Contact/Contact'
 import Footer from "../../components/Footer/Footer"
 const Home = () => {
+  const featuresRef = useRef(null)
   return (
       <div className='home'>
-      <Navbar />
-      <Hero />
-      <Features />
-      <Partners />
-      <OurServices />
-      <Technologies />
-      <WorkProcess />
-      <Team />
-      <BookNow />
-      <Testimonials />
-      <Contact />
+      <Navbar id="navbar" ref={ featuresRef} />
+      <Hero id="hero"/>
+      <Features id="features"/>
+      <Partners id="partners"/>
+      <OurServices id="services"/>
+      <Technologies id="technologies  "/>
+      <WorkProcess id="workprocess"/>
+      <Team id="team"/>
+      <BookNow id="booknow"/>
+      <Testimonials id="testimonials"/>
+      <Contact id="footer"/>
       <Footer />
     </div>
   )

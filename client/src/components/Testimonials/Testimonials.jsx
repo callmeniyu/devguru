@@ -1,6 +1,7 @@
 import React from "react"
 import "./Testimonials.css"
 import { Carousel } from "react-responsive-3d-carousel"
+import { testimonial } from "../../utils/data"
 import TestimonialCard from "../TestimonialCard/TestimonialCard"
 const Testimonials = () => {
     return (
@@ -20,9 +21,11 @@ const Testimonials = () => {
                 isArrowsShadow={false}
                 selectable={true}
             >
-                <TestimonialCard />
-                <TestimonialCard />
-                <TestimonialCard />
+                <TestimonialCard data={ testimonial[0]} />
+                <TestimonialCard data={ testimonial[1]}/>
+                <TestimonialCard data={ testimonial[2]}/>
+                <TestimonialCard data={ testimonial[3]}/>
+                <TestimonialCard data={ testimonial[4]}/>
             </Carousel>
         </div>
     )

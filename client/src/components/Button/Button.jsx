@@ -4,7 +4,7 @@ import "./Button.css"
 const Button = (props) => {
   let classes = props.className
   return (
-    <Link className={`btn ${classes}`} to="#">{props.text}  <span></span><span></span><span></span><span></span></Link>
+    <Link className={`btn ${classes}`} to="/abc">{props.text}  <span></span><span></span><span></span><span></span></Link>
   )
 }
 

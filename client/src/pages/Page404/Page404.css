@@ -1,0 +1,15 @@
+.page404{
+    font-family: "poppins";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    background-color: var(--shade-blue);
+}
+.error-404{
+    width: 30rem;
+    height: 30rem;
+}
+.page404 h2{
+    font-size: 2.5rem;
+}

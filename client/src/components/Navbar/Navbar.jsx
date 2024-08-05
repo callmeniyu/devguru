@@ -13,11 +13,11 @@ const Navbar = () => {
     <div className={`navbar ${menuToggled ? "menu-navbar-on" : "" }`}>
         <Logo/>
         <ul className={`navbar-items ${menuToggled ? "menu-items-on" : "menu-items-off"  }`}>
-            <li><Link className='navbar-item'>Features</Link><hr /></li>
-            <li><Link className='navbar-item'>Partners</Link><hr /></li>
-            <li><Link className='navbar-item'>Services</Link><hr /></li>
-            <li><Link className='navbar-item'>Team</Link><hr /></li>
-            <li><Link className='navbar-item'>Work Process</Link><hr /></li>
+            <li><Link className='navbar-item' to="/features">Features</Link><hr /></li>
+            <li><Link className='navbar-item' to="/partners">Partners</Link><hr /></li>
+            <li><Link className='navbar-item' to="/services">Services</Link><hr /></li>
+            <li><Link className='navbar-item' to="/team">Team</Link><hr /></li>
+            <li><Link className='navbar-item' to="/workprocess">Work Process</Link><hr /></li>
         </ul>
       <Button className={`navbar-btn ${menuToggled ? "menu-btn-on" : "menu-btn-off"  }`} text="Book Now!"/>
       <MenuIcon fontSize='large' className={`navbar-menu-icon ${menuToggled ? "menu-icon-on" : ""  }`} onClick={ ()=>setmMenuToggled(prev => !prev)} />
