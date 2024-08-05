@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import ListElement from "../Listelement/Listelement"
 import { features } from "../../utils/data"
 import { motion, AnimatePresence } from "framer-motion"
+import { useMediaQuery } from "react-responsive"
 import "./Features.css"
 import { duration } from "@mui/material"
 
@@ -11,6 +12,7 @@ const Features = () => {
         e.preventDefault()
         setTitle(e.target.name)
     }
+    const isSmallScreen = useMediaQuery({ maxWidth: 600 })
 
     const currentFeature = features.find((feature) => feature.title == title)
 
@@ -27,6 +29,48 @@ const Features = () => {
         exit: {
             opacity: 0,
         },
+    }
+
+    const h1Variant = {
+        small: {
+            y: [-50, 0],
+            opacity: [0, 1],
+            transition: { duration: 0.5, delay: 0.1, stiffness: 20, type: "spring" },
+        },
+        large: {
+            x: [-50, 0],
+            opacity: [0, 1],
+            transition: { duration: 0.5, delay: 0.1, stiffness: 20, type: "spring" },
+        },
+    }
+    const pVariant = {
+        small: {
+            y: [-50, 0],
+            opacity: [0, 1],
+            transition: { duration: 0.5, delay: 0.2, stiffness: 20, type: "spring" },
+        },
+        large: {
+            x: [-50, 0],
+            opacity: [0, 1],
+            transition: { duration: 0.5, delay: 0.2, stiffness: 20, type: "spring" },
+        },
+    }
+    const pointsVariant = {
+        small: {
+            y: [-50, 0],
+            opacity: [0, 1],
+            transition: { duration: 0.5, delay: 0.3, stiffness: 20, type: "spring" },
+        },
+        large: {
+            x: [-50, 0],
+            opacity: [0, 1],
+            transition: { duration: 0.5, delay: 0.3, stiffness: 20, type: "spring" },
+        },
+    }
+
+    const getVariant = () => {
+        if (isSmallScreen) return "small"
+        return "large"
     }
     return (
         <div className="features">
@@ -75,51 +119,14 @@ const Features = () => {
                 >
                     <div className="features-main-left">
                         <div className="features-main-left-description">
-                            <motion.h3
-                                initial={{ x: -50, opacity: 0 }}
-                                whileInView={{
-                                    x: 0,
-                                    opacity: 1,
-                                    transition: {
-                                        delay: 0.1,
-                                        duration: 0.5,
-                                        type: "spring",
-                                        stiffness: 20,
-                                    },
-                                }}
-                            >
+                            <motion.h3 variants={h1Variant} whileInView={getVariant()}>
                                 {currentFeature.title}
                             </motion.h3>
-                            <motion.p
-                                initial={{ x: -50, opacity: 0 }}
-                                whileInView={{
-                                    x: 0,
-                                    opacity: 1,
-                                    transition: {
-                                        delay: 0.2,
-                                        duration: 0.5,
-                                        type: "spring",
-                                        stiffness: 20,
-                                    },
-                                }}
-                            >
+                            <motion.p variants={pVariant} whileInView={getVariant()}>
                                 {currentFeature.description}
                             </motion.p>
                         </div>
-                        <motion.div
-                             initial={{ x: -50, opacity: 0 }}
-                                whileInView={{
-                                    x: 0,
-                                    opacity: 1,
-                                    transition: {
-                                        delay: 0.3,
-                                        duration: 0.5,
-                                        type: "spring",
-                                        stiffness:20
-                                    },
-                                }}
-                            className="list-elements-div"
-                        >
+                        <motion.div variants={pointsVariant} whileInView={getVariant()} className="list-elements-div">
                             <ListElement text={currentFeature.points[0]} />
                             <ListElement text={currentFeature.points[1]} />
                             <ListElement text={currentFeature.points[2]} />

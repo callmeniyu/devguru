@@ -19,11 +19,17 @@ const Team = () => {
                     perMove: 1,
                     focus:0,
                     breakpoints: {
+                        500: {
+                            perPage:0.5
+                        },
                         600: {
                             perPage:1
                         },
                         800: {
                             perPage:2
+                        },
+                        1150: {
+                            perPage:2.5
                         },
                     },
                     pagination: true,

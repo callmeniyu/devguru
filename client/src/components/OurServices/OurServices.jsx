@@ -54,17 +54,7 @@ const Ourservices = () => {
         <div className="services">
             <h3 className="section-header">Services</h3>
             <div className="services-main">
-                <motion.ul
-                    initial={{ y: -100, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{
-                        y: { type: "spring", stiffness: 20, duration:0.3 },
-                        opacity: { duration: 0.6 },
-                        ease: "easeIn",
-                        duration:3
-                    }}
-                    className="services-left"
-                >
+                <ul className="services-left">
                     <li className="services-item">
                         <a href="#" onClick={(e) => handleTitle(e)} name="Web Development">
                             Web Development <KeyboardArrowRightIcon className="right-arrow" />
@@ -95,7 +85,7 @@ const Ourservices = () => {
                             Backend Development <KeyboardArrowRightIcon className="right-arrow" />
                         </a>
                     </li>
-                </motion.ul>
+                </ul>
                 <motion.div
                     className="services-right"
                     variants={rightVariants}

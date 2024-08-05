@@ -62,6 +62,9 @@
     }
 }
 @media (max-width:500px){
+    .footer{
+        padding: 1rem;
+    }
     .footer-right-col1,
     .footer-right-col2{
         min-width: 8rem;

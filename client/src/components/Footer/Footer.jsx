@@ -19,10 +19,10 @@ const Footer = () => {
                     from the solopreneur with big dreams to the household name large-corporation.
                 </p>
                 <div className="footer-social-icons">
-                    <Link><EmailIcon /></Link>
+                    <a href="mailto:getniyashere@gmail.com"><EmailIcon /></a>
                     <Link><LinkedInIcon /></Link>
                     <Link><InstagramIcon /></Link>
-                    <Link><WhatsAppIcon /></Link>
+                    <a href="https://api.whatsapp.com/send?phone=+919745676150&text=Hey there!"><WhatsAppIcon /></a>
                     <Link><PhoneIcon /></Link>
                 </div>
             </div>
@@ -31,21 +31,22 @@ const Footer = () => {
                     <li>
                         <h4>devguru</h4>
                     </li>
-                    <li><Link>About us</Link></li>
-                    <li><Link>Testimonials</Link></li>
-                    <li><Link>Work Process</Link></li>
-                    <li><Link>Contact Us</Link></li>
-                    <li><Link>Privacy & Policy</Link></li>
+                    <li><Link to="/abc">About us</Link></li>
+                    <li><Link to="/abc">Testimonials</Link></li>
+                    <li><Link to="/abc">Work Process</Link></li>
+                    <li><Link to="/abc">Contact Us</Link></li>
+                    <li><Link to="/abc">Privacy & Policy</Link></li>
                 </ul>
                 <ul className="footer-right-col2">
                     <li>
                         <h4>services</h4>
                     </li>
-                    <li><Link>Web Development</Link></li>
-                    <li><Link>Mobile App</Link></li>
-                    <li><Link>Figma Design</Link></li>
-                    <li><Link>Videography</Link></li>
-                    <li><Link>Digital posters</Link></li>
+                    <li><Link to="/abc">Web Development</Link></li>
+                    <li><Link to="/abc">Frontend Development</Link></li>
+                    <li><Link to="/abc">UI/UX Design</Link></li>
+                    <li><Link to="/abc">Mobile App Development</Link></li>
+                    <li><Link to="/abc">SaaS Sevices</Link></li>
+                    <li><Link to="/abc">Backend Development</Link></li>
                 </ul>
                 <ul className="footer-right-col3">
                     <p>©{new Date().getFullYear()} devguru. All rights reserved</p>
