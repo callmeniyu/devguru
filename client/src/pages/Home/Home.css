@@ -5,6 +5,18 @@ html{
     padding: 0 2rem;
     padding-bottom: 0;
 }
+.loader-div{
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.loader{
+    width: 12rem;
+    height: 12rem;
+    margin-left: 8vw;
+}
 @media (min-width:1930px){
     .home{
         padding:0 10rem;
