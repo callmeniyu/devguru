@@ -15,10 +15,9 @@ import Footer from "../../components/Footer/Footer"
 import RiseLoader from "react-spinners/RiseLoader"
 
 const Home = () => {
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        setLoading(true)
         setTimeout(() => {
             setLoading(false)
         }, 2500)
