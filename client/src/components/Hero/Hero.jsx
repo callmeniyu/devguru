@@ -76,8 +76,8 @@ const Hero = () => {
                     variants={pVariant}
                     whileInView={getVariant()}
                 >
-                    DevGuru is your <span className="hero-left-p-span">tech partner</span>, Pioneering{" "}
-                    <span className="hero-left-p-span">web solutions</span> and services that turn your digital dreams into
+                    Devguru is your <span className="hero-left-p-span">tech partner</span>, pioneering 
+                    <span className="hero-left-p-span"> web solutions</span> and services that turn your digital dreams into
                     measurable, real-world success stories.
                 </motion.p>
                 <motion.div

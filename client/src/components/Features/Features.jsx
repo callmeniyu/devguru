@@ -108,47 +108,38 @@ const Features = () => {
                 </li>
             </ul>
             <hr />
-            <AnimatePresence initial={false}>
-                <motion.div
-                    variants={variants}
-                    initial="initial"
-                    animate="animate"
-                    exit="exit"
-                    key={currentFeature.id}
-                    className="features-main"
-                >
-                    <div className="features-main-left">
-                        <div className="features-main-left-description">
-                            <motion.h3 variants={h1Variant} whileInView={getVariant()}>
-                                {currentFeature.title}
-                            </motion.h3>
-                            <motion.p variants={pVariant} whileInView={getVariant()}>
-                                {currentFeature.description}
-                            </motion.p>
-                        </div>
-                        <motion.div variants={pointsVariant} whileInView={getVariant()} className="list-elements-div">
-                            <ListElement text={currentFeature.points[0]} />
-                            <ListElement text={currentFeature.points[1]} />
-                            <ListElement text={currentFeature.points[2]} />
-                            <ListElement text={currentFeature.points[3]} />
-                        </motion.div>
+            <div className="features-main">
+                <div className="features-main-left">
+                    <div className="features-main-left-description">
+                        <motion.h3 variants={h1Variant} whileInView={getVariant()}>
+                            {currentFeature.title}
+                        </motion.h3>
+                        <motion.p variants={pVariant} whileInView={getVariant()}>
+                            {currentFeature.description}
+                        </motion.p>
                     </div>
-                    <motion.div
-                        initial={{ scale: 0.9, opacity: 0 }}
-                        whileInView={{ scale: 1, opacity: 1 }}
-                        transition={{
-                            delay: 1,
-                            scale: { type: "spring", stiffness: 20 },
-                            opacity: { duration: 0.8 },
-                            ease: "easeIn",
-                            duration: 1,
-                        }}
-                        className="features-main-right"
-                    >
-                        <img src={currentFeature.img} className="feature-img" alt="features-main-right-img" />
+                    <motion.div variants={pointsVariant} whileInView={getVariant()} className="list-elements-div">
+                        <ListElement text={currentFeature.points[0]} />
+                        <ListElement text={currentFeature.points[1]} />
+                        <ListElement text={currentFeature.points[2]} />
+                        <ListElement text={currentFeature.points[3]} />
                     </motion.div>
+                </div>
+                <motion.div
+                    initial={{ scale: 0.9, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{
+                        delay: 1,
+                        scale: { type: "spring", stiffness: 20 },
+                        opacity: { duration: 0.8 },
+                        ease: "easeIn",
+                        duration: 1,
+                    }}
+                    className="features-main-right"
+                >
+                    <img src={currentFeature.img} className="feature-img" alt="features-main-right-img" />
                 </motion.div>
-            </AnimatePresence>
+            </div>
         </div>
     )
 }

@@ -14,14 +14,12 @@ const Timeline = ({ setObserver, callback }) => {
     const timeline4 = useRef(null)
     const timeline5 = useRef(null)
     const timeline6 = useRef(null)
-    const timeline7 = useRef(null)
     const circle1 = useRef(null)
     const circle2 = useRef(null)
     const circle3 = useRef(null)
     const circle4 = useRef(null)
     const circle5 = useRef(null)
     const circle6 = useRef(null)
-    const circle7 = useRef(null)
 
     const someCallback = () => {
         setMessage1("Step one")
@@ -44,10 +42,7 @@ const Timeline = ({ setObserver, callback }) => {
     const someCallback6 = () => {
         setMessage2("Step six")
     }
-    const someCallback7 = () => {
-        setMessage2("Step seven")
-        fireConfetti()
-    }
+
 
     useEffect(() => {
         setObserver(timeline1.current)
@@ -56,14 +51,12 @@ const Timeline = ({ setObserver, callback }) => {
         setObserver(timeline4.current)
         setObserver(timeline5.current)
         setObserver(timeline6.current)
-        setObserver(timeline7.current)
         setObserver(circle1.current, someCallback)
         setObserver(circle2.current, someCallback2)
         setObserver(circle3.current, someCallback3)
         setObserver(circle4.current, someCallback4)
         setObserver(circle5.current, someCallback5)
         setObserver(circle6.current, someCallback6)
-        setObserver(circle7.current, someCallback7)
     }, [])
 
     return (
@@ -90,7 +83,7 @@ const Timeline = ({ setObserver, callback }) => {
                     <div className="workprocess-step-left">01</div>
                     <div className="workprocess-step-right">
                         <h3>Requirements gathering</h3>
-                        <p>We collaborate with you to gather and to understand your business needs and objectives</p>
+                        <p>We collaborate with you to gather and to understand your business needs and objectives.</p>
                     </div>
                 </motion.div>
             </div>
@@ -116,7 +109,7 @@ const Timeline = ({ setObserver, callback }) => {
                     <div className="workprocess-step-left">02</div>
                     <div className="workprocess-step-right">
                         <h3>Iterative planning</h3>
-                        <p>We conduct iterative planning to adapt emerging requirements and feedback</p>
+                        <p>We conduct iterative planning to adapt emerging requirements and feedback.</p>
                     </div>
                 </motion.div>
             </div>
@@ -226,34 +219,6 @@ const Timeline = ({ setObserver, callback }) => {
                     className="message workprocess-step workprocess-step-l"
                 >
                     <div className="workprocess-step-left">06</div>
-                    <div className="workprocess-step-right">
-                        <h3>Continuous testing</h3>
-                        <p>
-                            Testing is a part of every sprint. Every increment undergous rigorous testing to ensure quality.
-                        </p>
-                    </div>
-                </motion.div>
-            </div>
-            <div id="timeline7" ref={timeline7} className="timeline" />
-            <div className="circleWrapper">
-                <div id="circle7" ref={circle7} className="circle">
-                    7
-                </div>
-                <motion.div
-                    initial={{ y: -50, opacity: 0 }}
-                    whileInView={{
-                        y: 0,
-                        opacity: 1,
-                        transition: {
-                            delay: 0.7,
-                            duration: 0.5,
-                            type: "spring",
-                            damping: 20,
-                        },
-                    }}
-                    className="message workprocess-step workprocess-step-r"
-                >
-                    <div className="workprocess-step-left">07</div>
                     <div className="workprocess-step-right">
                         <h3>Done!</h3>
                         <p>Your projects are in your hands!</p>
