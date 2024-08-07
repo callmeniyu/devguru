@@ -12,7 +12,7 @@ import BookNow from "../../components/BookNow/BookNow"
 import Testimonials from "../../components/Testimonials/Testimonials"
 import Contact from "../../components/Contact/Contact"
 import Footer from "../../components/Footer/Footer"
-import RiseLoader from "react-spinners/RiseLoader"
+import HashLoader from "react-spinners/HashLoader"
 
 const Home = () => {
     const [loading, setLoading] = useState(true)
@@ -26,7 +26,7 @@ const Home = () => {
         <>
             {loading ? (
                 <div className="loader-div">
-                    <RiseLoader loading={loading} data-testid="loader" color="#614EFA" className="loader" />
+                    <HashLoader loading={loading} data-testid="loader" color="#614EFA" className="loader" />
                 </div>
             ) : (
                 <div className="home">

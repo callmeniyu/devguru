@@ -15,7 +15,6 @@ html{
 .loader{
     width: 12rem;
     height: 12rem;
-    margin-left: 8vw;
 }
 @media (min-width:1930px){
     .home{

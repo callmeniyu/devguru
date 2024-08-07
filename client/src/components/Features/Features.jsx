@@ -4,7 +4,6 @@ import { features } from "../../utils/data"
 import { motion, AnimatePresence } from "framer-motion"
 import { useMediaQuery } from "react-responsive"
 import "./Features.css"
-import { duration } from "@mui/material"
 
 const Features = () => {
     const [title, setTitle] = useState("Proffesional")

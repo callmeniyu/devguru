@@ -8,7 +8,6 @@ import {motion} from "framer-motion"
 
 const Navbar = () => {
   const [menuToggled, setmMenuToggled] = useState(false)
-  console.log(menuToggled)
   return (
     <div className={`navbar ${menuToggled ? "menu-navbar-on" : "" }`}>
         <Logo/>

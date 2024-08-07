@@ -46,10 +46,6 @@ const Ourservices = () => {
             opacity: 0,
         },
     }
-
-    useEffect(() => {
-        console.log(title)
-    })
     return (
         <div className="services">
             <h3 className="section-header">Services</h3>
