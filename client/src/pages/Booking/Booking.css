@@ -1,0 +1,123 @@
+.booking{
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+.booking>p{
+    text-align: center;
+}
+
+.booking-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    margin-top: 3rem;
+    border-radius: 1rem;
+}
+.booking-form{
+    display: flex;
+}
+.booking-left{
+    background-color: var(--theme-blue);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 1rem 0 0 1rem;
+}
+.booking-left div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: black;
+}
+.booking-right{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 0 1rem 1rem 0;
+    border-top: 2px solid var(--theme-blue);
+    border-right: 2px solid var(--theme-blue);
+    border-bottom: 2px solid var(--theme-blue);
+}
+.booking-right div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.booking-right textarea{
+    height: 2rem;
+    transition: 0.2s ease-in;
+    padding: 0.4rem;
+    background-color: aliceblue;
+    border: none;
+    width: 97%;
+}
+.booking-container textarea::placeholder{
+    font-family: "poppins";
+}
+.booking-right textarea:focus{
+    height: 10rem;
+}
+.booking-container input{
+    width: 21rem;
+    height: 3rem;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    padding: 0 0.7rem;
+}
+.booking-left input{
+    background-color: white !important;
+}
+.booking-date{
+    font-family: "poppins";
+    color: rgb(115, 115, 115);
+}
+.booking-container input:focus,
+.booking-container textarea:focus{
+    outline: none;
+}
+
+.booking-header{
+    margin-bottom: 0 !important;
+}
+.booking-container button{
+    margin-top: 2rem;
+}
+.booking-btn{
+    margin-top: 2rem;
+}
+@media (max-width:890px){
+    .booking-container{
+        width: 100%;
+    }
+    .booking-form{
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .booking-left{
+        border-radius: 1rem 1rem 0 0;
+        width: 80%;
+        border: 2px solid var(--theme-blue);
+    }
+    .booking-left input {
+        width: 95%;
+    }
+    .booking-right input,
+    .booking-right textarea {
+        width: 95%;
+    }
+    .booking-right{
+        border-radius: 0 0 1rem 1rem;
+        border-top: none;
+        border-left: 2px solid var(--theme-blue);
+        width: 80%;
+    }
+}

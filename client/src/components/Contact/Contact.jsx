@@ -25,7 +25,7 @@ const Contact = () => {
                 <div className="contact-icons">
                     <a href="mailto:getniyashere@gmail.com" className="contact-gmail">
                         <EmailIcon fontSize="large"/>
-                        <p>devguru@gmail.com</p>
+                        <p>devguru.solutions@gmail.com</p>
                     </a>
                     <a href="https://api.whatsapp.com/send?phone=+919745676150&text=Hey there!" className="contact-whatsapp">
                         <WhatsAppIcon fontSize="large"/>

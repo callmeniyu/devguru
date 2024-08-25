@@ -163,10 +163,9 @@ const Timeline = ({ setObserver, callback }) => {
                 >
                     <div className="workprocess-step-left">04</div>
                     <div className="workprocess-step-right">
-                        <h3>Design and Prototyping</h3>
+                        <h3>Incremental Development</h3>
                         <p>
-                            We design interactive mockups and prototypes to validate functionality ensuring your involvement
-                            and feedback throughout.
+                            Our team builds in short cycles using the latest technologies, adjusting to feedbacks.
                         </p>
                     </div>
                 </motion.div>

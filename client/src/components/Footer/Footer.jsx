@@ -9,9 +9,10 @@ import PhoneIcon from "@mui/icons-material/Phone"
 import { Link } from "react-router-dom"
 
 
-const Footer = () => {
+const Footer = (props) => {
+    let classList = props.className
     return (
-        <div className="footer">
+        <div className={`footer ${classList}`}>
             <div className="footer-left">
                 <Logo />
                 <p>
