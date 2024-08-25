@@ -12,4 +12,11 @@
 }
 .page404 h2{
     font-size: 2.5rem;
+    text-align: center !important;
+}
+@media(max-width:600px){
+    .error-404{
+        width: 25rem;
+        height: 25rem;
+    }
 }
