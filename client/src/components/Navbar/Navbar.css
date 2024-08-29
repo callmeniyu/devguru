@@ -29,7 +29,6 @@
 .navbar-items hr {
     display: none ;
 }
-
 @media (max-width: 1024px) {
     .navbar-menu-icon {
         display: block !important;

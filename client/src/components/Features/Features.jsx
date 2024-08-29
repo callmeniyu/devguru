@@ -151,7 +151,6 @@ const Features = () => {
                     initial={{ scale: 0.9, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
                     transition={{
-                        delay: 1,
                         scale: { type: "spring", stiffness: 20 },
                         opacity: { duration: 0.8 },
                         ease: "easeIn",
