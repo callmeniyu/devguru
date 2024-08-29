@@ -16,7 +16,12 @@ html{
     width: 12rem;
     height: 12rem;
 }
-@media (min-width:1930px){
+@media (min-width:1600px){
+    .home{
+        padding:0 30rem;
+    }
+}
+@media (min-width:1350px){
     .home{
         padding:0 10rem;
     }

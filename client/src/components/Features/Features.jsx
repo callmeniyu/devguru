@@ -3,10 +3,18 @@ import ListElement from "../Listelement/Listelement"
 import { features } from "../../utils/data"
 import { motion, AnimatePresence } from "framer-motion"
 import { useMediaQuery } from "react-responsive"
+import feature_img_proffesional from "../../assets/svg/feature_img_professional.svg"
+import feature_img_costeffective from "../../assets/svg/feature_img_costeffective.svg"
+import feature_img_scalable from "../../assets/svg/feature_img_scalable.svg"
+import feature_img_secure from "../../assets/svg/feature_img_secure.svg"
+import feature_img_timebound from "../../assets/svg/feature_img_timebound.svg"
+import feature_img_innovative from "../../assets/svg/feature_img_innovative.svg"
 import "./Features.css"
+
 
 const Features = () => {
     const [title, setTitle] = useState("Proffesional")
+    const [image, setSelectedImage] = useState("Proffesional")
     const handleTitle = (e) => {
         e.preventDefault()
         setTitle(e.target.name)
@@ -14,6 +22,21 @@ const Features = () => {
     const isSmallScreen = useMediaQuery({ maxWidth: 600 })
 
     const currentFeature = features.find((feature) => feature.title == title)
+
+    const imageMap = {
+        Proffesional:feature_img_proffesional ,
+        CostEffective:feature_img_costeffective ,
+        Scalable:feature_img_scalable ,
+        Secure:feature_img_secure ,
+        TimeBound:feature_img_timebound ,
+        Innovative:feature_img_innovative ,
+    }
+    useEffect(() => {
+        const selectedTitle = title.replace(/[^a-zA-Z0-9_ ]/g, "");
+        setSelectedImage(imageMap[selectedTitle])
+        console.log("selected image",image)
+    },[title])
+
 
     const variants = {
         initial: {
@@ -136,7 +159,7 @@ const Features = () => {
                     }}
                     className="features-main-right"
                 >
-                    <img src={currentFeature.img} className="feature-img" alt="features-main-right-img" />
+                    <img src={image} className="feature-img" alt="features-main-right-img" />
                 </motion.div>
             </div>
         </div>
