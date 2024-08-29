@@ -14,7 +14,6 @@ import "./Features.css"
 
 const Features = () => {
     const [title, setTitle] = useState("Proffesional")
-    const [image, setSelectedImage] = useState("Proffesional")
     const handleTitle = (e) => {
         e.preventDefault()
         setTitle(e.target.name)
@@ -23,19 +22,16 @@ const Features = () => {
 
     const currentFeature = features.find((feature) => feature.title == title)
 
-    const imageMap = {
-        Proffesional:feature_img_proffesional ,
-        CostEffective:feature_img_costeffective ,
-        Scalable:feature_img_scalable ,
-        Secure:feature_img_secure ,
-        TimeBound:feature_img_timebound ,
-        Innovative:feature_img_innovative ,
-    }
     useEffect(() => {
-        const selectedTitle = title.replace(/[^a-zA-Z0-9_ ]/g, "");
-        setSelectedImage(imageMap[selectedTitle])
-        console.log("selected image",image)
-    },[title])
+        const preloadImages = (srcArray) => {
+            srcArray.forEach((src) => {
+                const img = new Image();
+                img.src = src;
+            });
+        };
+    
+        preloadImages(features.map((service) => service.img));
+    }, []);
 
 
     const variants = {
