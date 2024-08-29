@@ -15,6 +15,17 @@ const Ourservices = () => {
     }
     const currentService = services.find((service) => service.title == title)
 
+    useEffect(() => {
+        const preloadImages = (srcArray) => {
+            srcArray.forEach((src) => {
+                const img = new Image();
+                img.src = src;
+            });
+        };
+    
+        preloadImages(services.map((service) => service.img));
+    }, []);
+
     const rightVariants = {
         initial: {
             x: -60,
