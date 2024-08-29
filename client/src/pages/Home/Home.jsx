@@ -42,7 +42,7 @@ const Home = () => {
         <title>Home - DevGuru</title>
         <link rel="canonical" href="https://devgurusolutions.netlify.app/" />
 
-        {/* JSON-LD for Organization */}
+        {/* Schema Markup: JSON-LD for Organization  */}
         <script type="application/ld+json">
           {`
           {
