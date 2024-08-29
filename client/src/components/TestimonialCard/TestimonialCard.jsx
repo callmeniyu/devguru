@@ -1,7 +1,6 @@
 import React, { useEffect } from "react"
 import "./TestimonialCard.css"
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote"
-import author1_img from "../../assets/images/me.jpg"
 const TestimonialCard = ({ data }) => {
     
     useEffect(() => {

@@ -4,8 +4,6 @@ import Timeline from "../Timeline/Timeline"
 import "./WorkProcess.css"
 
 const WorkProcess = () => {
-  const [message, setMessage] = useState("");
-
   const onCallback = () => {
     console.log("awesome");
   };

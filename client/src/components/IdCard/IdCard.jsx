@@ -1,6 +1,5 @@
 import React from "react"
 import "./IdCard.css"
-import niyas_img from "../../assets/images/me.jpg"
 import LinkedInIcon from "@mui/icons-material/LinkedIn"
 import GitHubIcon from "@mui/icons-material/GitHub"
 import LocalPoliceIcon from "@mui/icons-material/LocalPolice"

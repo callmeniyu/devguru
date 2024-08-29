@@ -7,7 +7,6 @@ import niyas_img from "../../assets/images/me.jpg"
 import shihad_img from "../../assets/images/shihad_img.jpeg"
 import rizad_img from "../../assets/images/rizad_img.jpeg"
 import sadiq_img from "../../assets/images/sadiq_img.jpg"
-import { breakpoints } from "@mui/system"
 const Team = () => {
     return (
         <div className="team">

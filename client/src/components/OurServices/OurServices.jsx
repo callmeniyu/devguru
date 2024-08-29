@@ -4,7 +4,6 @@ import { services } from "../../utils/data"
 import { motion } from "framer-motion"
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight"
 import "./OurServices.css"
-import { duration } from "@mui/material"
 
 const Ourservices = () => {
     const [title, setTitle] = useState("Web Development")

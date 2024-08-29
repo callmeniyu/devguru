@@ -3,12 +3,6 @@ import ListElement from "../Listelement/Listelement"
 import { features } from "../../utils/data"
 import { motion, AnimatePresence } from "framer-motion"
 import { useMediaQuery } from "react-responsive"
-import feature_img_proffesional from "../../assets/svg/feature_img_professional.svg"
-import feature_img_costeffective from "../../assets/svg/feature_img_costeffective.svg"
-import feature_img_scalable from "../../assets/svg/feature_img_scalable.svg"
-import feature_img_secure from "../../assets/svg/feature_img_secure.svg"
-import feature_img_timebound from "../../assets/svg/feature_img_timebound.svg"
-import feature_img_innovative from "../../assets/svg/feature_img_innovative.svg"
 import "./Features.css"
 
 

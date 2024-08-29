@@ -18,32 +18,32 @@ const Partners = () => {
         <div className="partners">
             <div className="section-header">Creating Digital Success Stories for Emerging Brands</div>
             <div className="partners-top">
-                <img src={siemens} alt="" />
-                <img src={medium} alt="" />
-                <img src={okta} alt="" />
-                <img src={sketchers} alt="" />
-                <img src={autodesk} alt="" />
-                <img src={nasa} alt="" />
-                <img src={siemens} alt="" />
-                <img src={medium} alt="" />
-                <img src={okta} alt="" />
-                <img src={sketchers} alt="" />
-                <img src={autodesk} alt="" />
-                <img src={nasa} alt="" />
+                <img src={siemens} alt="siemens" />
+                <img src={medium} alt="medium" />
+                <img src={okta} alt="okta" />
+                <img src={sketchers} alt="sketchers" />
+                <img src={autodesk} alt="autodesk" />
+                <img src={nasa} alt="nasa" />
+                <img src={siemens} alt="siemens" />
+                <img src={medium} alt="medium" />
+                <img src={okta} alt="okta" />
+                <img src={sketchers} alt="sketchers" />
+                <img src={autodesk} alt="autodesk" />
+                <img src={nasa} alt="nasa" />
             </div>
             <div className="partners-bottom">
-                <img src={sony} alt="" />
-                <img src={cisco} alt="" />
-                <img src={servicetitan} alt="" />
-                <img src={vmware} alt="" />
-                <img src={github} alt="" />
-                <img src={alorica} alt="" />
-                <img src={sony} alt="" />
-                <img src={cisco} alt="" />
-                <img src={servicetitan} alt="" />
-                <img src={vmware} alt="" />
-                <img src={github} alt="" />
-                <img src={alorica} alt="" />
+                <img src={sony} alt="sony" />
+                <img src={cisco} alt="cisco" />
+                <img src={servicetitan} alt="servicetitan" />
+                <img src={vmware} alt="vmware" />
+                <img src={github} alt="github" />
+                <img src={alorica} alt="alorica" />
+                <img src={sony} alt="sony" />
+                <img src={cisco} alt="cisco" />
+                <img src={servicetitan} alt="servicetitan" />
+                <img src={vmware} alt="vmware" />
+                <img src={github} alt="github" />
+                <img src={alorica} alt="alorica" />
             </div>
         </div>
     )

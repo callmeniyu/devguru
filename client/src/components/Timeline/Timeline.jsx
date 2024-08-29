@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react"
-import { fireConfetti } from "./confetti"
 import { motion } from "framer-motion"
 import "./Timeline.css"
 

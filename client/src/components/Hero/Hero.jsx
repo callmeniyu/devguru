@@ -1,7 +1,7 @@
-import React, { useEffect } from "react"
+import React from "react"
 import "./Hero.css"
 import Button from "../Button/Button"
-import { delay, motion } from "framer-motion"
+import { motion } from "framer-motion"
 import hero_img from "../../assets/images/hero_right_img.png"
 import { useMediaQuery } from 'react-responsive';
 

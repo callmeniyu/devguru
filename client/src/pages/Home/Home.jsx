@@ -12,24 +12,61 @@ import BookNow from "../../components/BookNow/BookNow"
 import Testimonials from "../../components/Testimonials/Testimonials"
 import Contact from "../../components/Contact/Contact"
 import Footer from "../../components/Footer/Footer"
-import HashLoader from "react-spinners/HashLoader"
+import Helmet from "react-helmet";
+
 
 const Home = () => {
-    const [loading, setLoading] = useState(true)
-
-    useEffect(() => {
-        setTimeout(() => {
-            setLoading(false)
-        }, 2500)
-    })
     return (
         <>
-            {loading ? (
-                <div className="loader-div">
-                    <HashLoader loading={loading} data-testid="loader" color="#614EFA" className="loader" />
-                </div>
-            ) : (
-                <div className="home">
+            <Helmet>
+                <title>Home - DevGuru</title>
+                <link rel="canonical" href="https://devgurusolutions.netlify.app/" />
+                <meta property="og:title" content="Devguru - Web-Based Solutions" />
+                <meta
+                    property="og:description"
+                    content="Offering top-notch web development, frontend, backend, and Figma design services."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://devgurusolutions.netlify.app/" />
+                <meta property="og:image" content="https://devgurusolutions.netlify.app/images/og-image.jpg" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Devguru - Web-Based Solutions" />
+                <meta
+                    name="twitter:description"
+                    content="Offering top-notch web development, frontend, backend, and Figma design services."
+                />
+                <meta name="twitter:image" content="https://devgurusolutions.netlify.app/images/twitter-card-image.jpg" />
+
+                <Helmet>
+        <title>Home - DevGuru</title>
+        <link rel="canonical" href="https://devgurusolutions.netlify.app/" />
+
+        {/* JSON-LD for Organization */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "devguru",
+            "url": "https://devgurusolutions.netlify.app/",
+            "logo": "https://devgurusolutions.netlify.app/components/Logo/Logo.jsx",
+            "sameAs": [
+              "https://www.facebook.com/devguru",
+              "https://www.linkedin.com/company/devguru",
+              "https://twitter.com/devguru"
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+1-800-123-4567",
+              "contactType": "Customer Service"
+            }
+          }
+          `}
+        </script>
+      </Helmet>
+            </Helmet>
+            <div className="home">
                     <Navbar id="navbar" />
                     <Hero id="hero" />
                     <Features id="features" />
@@ -43,7 +80,6 @@ const Home = () => {
                     <Contact id="contact" />
                     <Footer />
                 </div>
-            )}
         </>
     )
 }
