@@ -154,7 +154,7 @@ const Features = () => {
                     }}
                     className="features-main-right"
                 >
-                    <img src={image} className="feature-img" alt="features-main-right-img" />
+                    <img src={currentFeature.img} className="feature-img" alt="features-main-right-img" />
                 </motion.div>
             </div>
         </div>
