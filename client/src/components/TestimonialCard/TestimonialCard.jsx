@@ -1,8 +1,17 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "./TestimonialCard.css"
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote"
 import author1_img from "../../assets/images/me.jpg"
-const TestimonialCard = ({data}) => {
+const TestimonialCard = ({ data }) => {
+    
+    useEffect(() => {
+        const preloadImages = (src) => {
+                const img = new Image();
+                img.src = src;
+        };
+    
+        preloadImages(data.img);
+    }, []);
     return (
         <div className="testimonialcard">
             <div className="testimonialcard-text">

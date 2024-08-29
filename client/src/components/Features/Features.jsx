@@ -29,8 +29,7 @@ const Features = () => {
                 img.src = src;
             });
         };
-    
-        preloadImages(features.map((service) => service.img));
+        preloadImages(features.map((feature) => feature.img));
     }, []);
 
 
