@@ -122,5 +122,6 @@
     .feature-img{
         width: 22rem;
         height: 22rem;
+        image-rendering: optimizeSpeed;
     }
 }
