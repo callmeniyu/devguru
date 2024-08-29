@@ -35,12 +35,12 @@ const Home = () => {
                     <Features id="features" />
                     <Partners id="partners" />
                     <OurServices id="services" />
-                    <Technologies id="technologies  " />
+                    <Technologies id="technologies" />
                     <WorkProcess id="workprocess" />
                     <Team id="team" />
                     <BookNow id="booknow" />
                     <Testimonials id="testimonials" />
-                    <Contact id="footer" />
+                    <Contact id="contact" />
                     <Footer />
                 </div>
             )}

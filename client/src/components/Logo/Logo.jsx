@@ -1,11 +1,14 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import "./Logo.css"
 const logo = () => {
     return (
-            <svg className='navbar-logo devguru-logo looka-1j8o68f'
+            <svg
+                className="navbar-logo devguru-logo looka-1j8o68f"
                 width="442.21669311523436"
                 height="69.25838513115899"
-                viewBox="0 0 369.89473684210526 57.931580921852536"
+            viewBox="0 0 369.89473684210526 57.931580921852536"
+            onClick={()=> window.scrollTo(0,0)}
             >
                 <defs id="SvgjsDefs1011"></defs>
                 <g

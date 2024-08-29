@@ -12,6 +12,7 @@
     border-radius: 6px;
     border: none;
     transition: 0.4s;
+    cursor: pointer;
 }
 .black-btn{
     background-color: black;

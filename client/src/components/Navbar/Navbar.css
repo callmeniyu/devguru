@@ -16,6 +16,7 @@
     font-weight: 500;
     display: inline-block;
     transition: 0.5s;
+    cursor: pointer;
 }
 .navbar-item:hover {
     transform: translateX(2px);
