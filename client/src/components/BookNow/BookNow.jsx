@@ -32,8 +32,8 @@ const BookNow = () => {
                 }}
                 className="booknow-btns"
             >
-                <Button text="Book your slot now!" className="intimate-btn" />
-                <Button text="Contact us now" className="black-btn intimate-btn" />
+                <Button text="Book your slot now!" to="contact" smooth={true} duration={100} className="intimate-btn" />
+                <Button text="Contact us now" to="contact" smooth={true} duration={100} className="black-btn intimate-btn" />
             </motion.div>
             <motion.p
                             initial={{ y: 40, opacity: 0 }}

@@ -84,7 +84,7 @@ const Hero = () => {
                     variants={buttonVariant}
                     whileInView={getVariant()}
                 >
-                <Button text="Book Now!" />
+                <Button text="Book Now!" to="contact" smooth={true} duration={100}/>
                 </motion.div>
             </div>
             <div className="hero-right">

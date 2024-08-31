@@ -67,6 +67,20 @@
 }
 .contact-send-btn {
     font-size: 1.1rem;
+    background-color: var(--theme-blue);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    width: 8rem;
+    height: 2.5rem;
+    padding:0.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: none;
+    transition: 0.4s;
+    cursor: pointer;
 }
 .contact-icons {
     width: 100%;
@@ -83,6 +97,25 @@
     text-decoration: none;
     color: black;
     width: inherit;
+}
+.contact-alert-div{
+    display: none !important;
+    width: 19rem;
+    position: relative;
+    right: 20rem;
+    bottom: 15rem;
+}
+.contact-alert{
+    display: flex;
+    width: 20rem;
+    align-items: center;
+}
+.contact-alert-on{
+    display: block !important;
+}
+.contact-success-close-icon{
+    padding-left: 1rem;
+    cursor:pointer;
 }
 @media (max-width: 770px) {
     .contact{
