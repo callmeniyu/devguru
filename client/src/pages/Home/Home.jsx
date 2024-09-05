@@ -20,15 +20,15 @@ const Home = () => {
         <>
             <Helmet>
                 <title>Home - DevGuru</title>
-                <link rel="canonical" href="https://devgurusolutions.netlify.app/" />
-                <meta property="og:title" content="Devguru - Web-Based Solutions" />
+                <link rel="canonical" href="https://devgurusolutions.tech/" />
+                <meta property="og:title" content="devguru - Web-Based Solutions" />
                 <meta
                     property="og:description"
                     content="Offering top-notch web development, frontend, backend, and Figma design services."
                 />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://devgurusolutions.netlify.app/" />
-                <meta property="og:image" content="https://devgurusolutions.netlify.app/images/og-image.jpg" />
+                <meta property="og:url" content="https://devgurusolutions.tech/" />
+                <meta property="og:image" content="https://devgurusolutions.tech/images/og-image.jpg" />
 
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Devguru - Web-Based Solutions" />
@@ -36,11 +36,11 @@ const Home = () => {
                     name="twitter:description"
                     content="Offering top-notch web development, frontend, backend, and Figma design services."
                 />
-                <meta name="twitter:image" content="https://devgurusolutions.netlify.app/images/twitter-card-image.jpg" />
+                <meta name="twitter:image" content="https://devgurusolutions.tech/images/twitter-card-image.jpg" />
 
                 <Helmet>
         <title>Home - DevGuru</title>
-        <link rel="canonical" href="https://devgurusolutions.netlify.app/" />
+        <link rel="canonical" href="https://devgurusolutions.tech/" />
 
         {/* Schema Markup: JSON-LD for Organization  */}
         <script type="application/ld+json">
@@ -49,8 +49,8 @@ const Home = () => {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "devguru",
-            "url": "https://devgurusolutions.netlify.app/",
-            "logo": "https://devgurusolutions.netlify.app/components/Logo/Logo.jsx",
+            "url": "https://devgurusolutions.tech/",
+            "logo": "https://devgurusolutions.tech/components/Logo/Logo.jsx",
             "sameAs": [
               "https://www.facebook.com/devguru",
               "https://www.linkedin.com/company/devguru",

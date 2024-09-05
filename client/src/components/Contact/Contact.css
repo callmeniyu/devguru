@@ -109,6 +109,7 @@
     display: flex;
     width: 20rem;
     align-items: center;
+    justify-content: center;
 }
 .contact-alert-on{
     display: block !important;
