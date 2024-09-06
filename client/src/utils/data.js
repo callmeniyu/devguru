@@ -182,7 +182,7 @@ export const testimonial = [
         name: "Daniel Rodriguez",
         company: "BrightWave Marketing",
         img: testimonial_img1,
-        text:"devguru's team brought our vision to life with their exceptional UI/UX design services. Using Figma, they created intuitive and visually appealing interfaces that have elevated our user experience. We highly recommend devguru for anyone looking to enhance their digital presence."
+        text:"Devguru's team brought our vision to life with their exceptional UI/UX design services. Using Figma, they created intuitive and visually appealing interfaces that have elevated our user experience. We highly recommend devguru for anyone looking to enhance their digital presence."
     },
     {
         id: 2,

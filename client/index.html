@@ -1,25 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./src/assets/favicon/android-chrome-512x512.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Devguru</title>
-    <script type="text/javascript">
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+
+        <meta
+            name="description"
+            content="devguru offers top-notch web-based solutions, specializing in web development, frontend and backend services, and Figma design. Elevate your online presence with expert craftsmanship and innovative design."
+        />
+        <meta
+            name="keywords"
+            content="devguru solutions, devgurusolutions, devgurusolutions.tech,web agency, website agency, agency, web development, frontend development, backend services, Figma design, web-based solutions, devguru, https://devgurusolutions.tech/, responsive web design, UI/UX design, full-stack development, custom web solutions, website design, software development, user interface design, digital solutions"
+        />
+
+        <link rel="canonical" href="https://devgurusolutions.tech/" />
+        <meta property="og:title" content="devguru - Web-Based Solutions" />
+        <meta
+            property="og:description"
+            content="Offering top-notch web development, frontend, backend, and Figma design services."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://devgurusolutions.tech/" />
+        <meta property="og:image" content="https://devgurusolutions.tech/images/og-image.jpg" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Devguru - Web-Based Solutions" />
+        <meta
+            name="twitter:description"
+            content="Offering top-notch web development, frontend, backend, and Figma design services."
+        />
+        <meta name="twitter:image" content="https://devgurusolutions.tech/images/twitter-card-image.jpg" />
+
+        <!-- META FOR SOCIAL MEDIA -->
+
+        <link rel="canonical" href="https://devgurusolutions.tech/" />
+
+        <script type="application/ld+json">
+            {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "devguru",
+              "url": "https://devgurusolutions.tech/",
+              "logo": "https://devgurusolutions.tech/components/Logo/Logo.jsx",
+              "sameAs": [
+                "https://www.facebook.com/devguru",
+                "https://www.linkedin.com/company/devguru",
+                "https://twitter.com/devguru"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-800-123-4567",
+                "contactType": "Customer Service"
+              }
+            }
+            `}
+        </script>
+        <meta rel="icon" href="" />
+
+        <link rel="shortcut icon" href="./src/assets/favicon/favicon.ico" />
+        <link rel="icon" type="image/png" href="./src/assets/favicon/android-chrome-192x192.png" sizes="192x192" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/favicon/android-chrome-512x512.png" />
+
+        <link rel="icon" type="image/svg+xml" href="./src/assets/favicon/android-chrome-512x512.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>devguru</title>
+        <script type="text/javascript">
+            ;(function (l) {
+                if (l.search[1] === "/") {
+                    var decoded = l.search
+                        .slice(1)
+                        .split("&")
+                        .map(function (s) {
+                            return s.replace(/~and~/g, "&")
+                        })
+                        .join("?")
+                    window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash)
+                }
+            })(window.location)
+        </script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+    </body>
 </html>

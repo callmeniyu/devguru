@@ -9,7 +9,7 @@
     width: 46.7%;
     gap: 1.5rem;
 }
-.hero-left>h1{
+.hero-left h1{
     font-size: 3rem;
 }
 .hero-left-h1-span{

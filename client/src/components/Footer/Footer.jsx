@@ -52,7 +52,7 @@ const Footer = (props) => {
                 <ul className="footer-right-col3">
                     <p>©{new Date().getFullYear()} devguru. All rights reserved</p>
                     <p>
-                        DevGuru Solutions, 3rd Floor, Vantage Plaza, Koramangala 6th Block, Bengaluru, Karnataka 560095,
+                        Devguru Solutions, 3rd Floor, Vantage Plaza, Koramangala 6th Block, Bengaluru, Karnataka 560095,
                         India
                     </p>
                 </ul>
