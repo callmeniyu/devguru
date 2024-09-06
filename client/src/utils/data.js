@@ -196,20 +196,20 @@ export const testimonial = [
         name: "Emily Johnson",
         company: "CreativePixel Studio",
         img: testimonial_img3,
-        text:"Working with DevGuru on our frontend development has been a fantastic experience. Their creative and technical skills brought our vision to life with a beautifully designed and highly responsive user interface.  Their collaborative approach and dedication to understanding our needs made the entire process seamless."
+        text:"Working with Devguru on our frontend development has been a fantastic experience. Their creative and technical skills brought our vision to life with a beautifully designed and highly responsive user interface.  Their collaborative approach and dedication to understanding our needs made the entire process seamless."
     },
     {
         id: 4,
         name: "Michael Patel",
         company: "DataGenix Analytics",
         img: testimonial_img4,
-        text:"Partnering with DevGuru for backend development has transformed our operations. Their expertise in building robust and scalable systems has significantly improved our platform's performance. The team's commitment to security and efficiency, along with their use of advanced technologies, has exceeded our expectations. We're thrilled with the results."
+        text:"Partnering with Devguru for backend development has transformed our operations. Their expertise in building robust and scalable systems has significantly improved our platform's performance. The team's commitment to security and efficiency, along with their use of advanced technologies, has exceeded our expectations. We're thrilled with the results."
     },
     {
         id: 5,
         name: "James Anderson",
         company: "ProjectPro Inc",
         img: testimonial_img5,
-        text:"Working with devguru has been a game-changer for our business. Their expertise in web development transformed our outdated website into a modern, responsive platform that has significantly improved our user engagement. Their attention to detail and commitment to using the latest technology truly sets them apart. We couldn't be happier with the results!"
+        text:"Working with Devguru has been a game-changer for our business. Their expertise in web development transformed our outdated website into a modern, responsive platform that has significantly improved our user engagement. Their attention to detail and commitment to using the latest technology truly sets them apart. We couldn't be happier with the results!"
     }
 ]
