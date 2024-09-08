@@ -1,16 +1,16 @@
 import React from "react"
-import siemens from "../../assets/svg/siemens.svg"
-import medium from "../../assets/svg/medium.svg"
-import okta from "../../assets/svg/okta.svg"
-import sketchers from "../../assets/svg/sketchers.svg"
-import autodesk from "../../assets/svg/autodesk.svg"
-import nasa from "../../assets/svg/nasa.svg"
-import sony from "../../assets/svg/sony.svg"
-import cisco from "../../assets/svg/cisco.svg"
-import servicetitan from "../../assets/svg/servicetitan.svg"
-import vmware from "../../assets/svg/vmware.svg"
-import github from "../../assets/svg/github.svg"
-import alorica from "../../assets/svg/alorica.svg"
+import hudon from "../../assets/svg/Hudon-logo.svg"
+import manila from "../../assets/svg/Manila-logo.svg"
+import nairobi from "../../assets/svg/nairobi_logo.svg"
+import basel from "../../assets/svg/Basel-logo.svg"
+import bern from "../../assets/svg/Bern-colored.svg"
+import buenos from "../../assets/svg/Buenos-colored.svg"
+import edinburgh from "../../assets/svg/edinburgh-colored.svg"
+import kobe from "../../assets/svg/KOBE-colored.svg"
+import Ljubljana from "../../assets/svg/Ljubljana-colored.svg"
+import memphis from "../../assets/svg/Oslo-colored.svg"
+import oslo from "../../assets/svg/github.svg"
+import venice from "../../assets/svg/venice-colored.svg"
 import "./Partners.css"
 
 const Partners = () => {
@@ -18,32 +18,32 @@ const Partners = () => {
         <div className="partners">
             <div className="section-header">Creating Digital Success Stories for Emerging Brands</div>
             <div className="partners-top">
-                <img src={siemens} alt="siemens" />
-                <img src={medium} alt="medium" />
-                <img src={okta} alt="okta" />
-                <img src={sketchers} alt="sketchers" />
-                <img src={autodesk} alt="autodesk" />
-                <img src={nasa} alt="nasa" />
-                <img src={siemens} alt="siemens" />
-                <img src={medium} alt="medium" />
-                <img src={okta} alt="okta" />
-                <img src={sketchers} alt="sketchers" />
-                <img src={autodesk} alt="autodesk" />
-                <img src={nasa} alt="nasa" />
+                <img src={hudon} alt="siemens" />
+                <img src={manila} alt="medium" />
+                <img src={nairobi} alt="okta" />
+                <img src={basel} alt="sketchers" />
+                <img src={bern} alt="autodesk" />
+                <img src={buenos} alt="nasa" />
+                <img src={hudon} alt="siemens" />
+                <img src={manila} alt="medium" />
+                <img src={nairobi} alt="okta" />
+                <img src={basel} alt="sketchers" />
+                <img src={bern} alt="autodesk" />
+                <img src={buenos} alt="nasa" />
             </div>
             <div className="partners-bottom">
-                <img src={sony} alt="sony" />
-                <img src={cisco} alt="cisco" />
-                <img src={servicetitan} alt="servicetitan" />
-                <img src={vmware} alt="vmware" />
-                <img src={github} alt="github" />
-                <img src={alorica} alt="alorica" />
-                <img src={sony} alt="sony" />
-                <img src={cisco} alt="cisco" />
-                <img src={servicetitan} alt="servicetitan" />
-                <img src={vmware} alt="vmware" />
-                <img src={github} alt="github" />
-                <img src={alorica} alt="alorica" />
+                <img src={edinburgh} alt="sony" />
+                <img src={kobe} alt="cisco" />
+                <img src={Ljubljana} alt="servicetitan" />
+                <img src={memphis} alt="vmware" />
+                <img src={oslo} alt="github" />
+                <img src={venice} alt="alorica" />
+                <img src={edinburgh} alt="sony" />
+                <img src={kobe} alt="cisco" />
+                <img src={Ljubljana} alt="servicetitan" />
+                <img src={memphis} alt="vmware" />
+                <img src={oslo} alt="github" />
+                <img src={venice} alt="alorica" />
             </div>
         </div>
     )

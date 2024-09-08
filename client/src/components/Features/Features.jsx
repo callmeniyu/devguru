@@ -87,38 +87,37 @@ const Features = () => {
         <div className="features">
             <h1 className="section-header">Features</h1>
             <ul className="features-navigate">
-                <li>
+                <li className={`${title == "Proffesional" ? "feature-nav-active" : ""}`}>
                     <a href="#" onClick={(e) => handleTitle(e)} name="Proffesional">
                         Professional
                     </a>
                 </li>
-                <li>
+                <li className={`${title == "Cost-Effective" ? "feature-nav-active" : ""}`}>
                     <a href="#" onClick={(e) => handleTitle(e)} name="Cost-Effective">
                         Cost-Effective
                     </a>
                 </li>
-                <li>
+                <li className={`${title == "Scalable" ? "feature-nav-active" : ""}`}>
                     <a href="#" onClick={(e) => handleTitle(e)} name="Scalable">
                         Scalable
                     </a>
                 </li>
-                <li>
+                <li className={`${title == "Secure" ? "feature-nav-active" : ""}`}>
                     <a href="#" onClick={(e) => handleTitle(e)} name="Secure">
                         Secure
                     </a>
                 </li>
-                <li>
+                <li className={`${title == "Time-Bound" ? "feature-nav-active" : ""}`}>
                     <a href="#" onClick={(e) => handleTitle(e)} name="Time-Bound">
                         Time-Bound
                     </a>
                 </li>
-                <li>
+                <li className={`${title == "Innovative" ? "feature-nav-active" : ""}`}>
                     <a href="#" onClick={(e) => handleTitle(e)} name="Innovative">
                         Innovative
                     </a>
                 </li>
             </ul>
-            <hr />
             <div className="features-main">
                 <div className="features-main-left">
                     <div className="features-main-left-description">

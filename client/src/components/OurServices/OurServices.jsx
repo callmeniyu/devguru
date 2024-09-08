@@ -61,32 +61,32 @@ const Ourservices = () => {
             <h3 className="section-header">Services</h3>
             <div className="services-main">
                 <ul className="services-left">
-                    <li className="services-item">
+                    <li className={`services-item ${title == "Web Development" ? "service-active" : ""}`}>
                         <a href="#" onClick={(e) => handleTitle(e)} name="Web Development">
                             Web Development <KeyboardArrowRightIcon className="right-arrow" />
                         </a>
                     </li>
-                    <li className="services-item">
-                        <a href="#" onClick={(e) => handleTitle(e)} name="Frontent Development">
+                    <li className={`services-item ${title == "Frontent Development" ? "service-active" : ""}`}>
+                        <a href="#" onClick={(e) => handleTitle(e)} name="Frontent Development" >
                             Frontent Development <KeyboardArrowRightIcon className="right-arrow" />
                         </a>
                     </li>
-                    <li className="services-item">
+                    <li className={`services-item ${title == "UI/UX Design (using Figma)" ? "service-active" : ""}`}>
                         <a href="#" name="UI/UX Design (using Figma)" onClick={(e) => handleTitle(e)}>
                             UI/UX Design (using Figma) <KeyboardArrowRightIcon className="right-arrow" />
                         </a>
                     </li>
-                    <li className="services-item">
+                    <li className={`services-item ${title == "Mobile App Development" ? "service-active" : ""}`}>
                         <a href="#" name="Mobile App Development" onClick={(e) => handleTitle(e)}>
                             Mobile App Development <KeyboardArrowRightIcon className="right-arrow" />
                         </a>
                     </li>
-                    <li className="services-item">
+                    <li className={`services-item ${title == "SaaS Sevices" ? "service-active" : ""}`}>
                         <a href="#" name="SaaS Sevices" onClick={(e) => handleTitle(e)}>
                             SaaS Sevices <KeyboardArrowRightIcon className="right-arrow" />
                         </a>
                     </li>
-                    <li className="services-item">
+                    <li className={`services-item ${title == "Backend Development" ? "service-active" : ""}`}>
                         <a href="#" name="Backend Development" onClick={(e) => handleTitle(e)}>
                             Backend Development <KeyboardArrowRightIcon className="right-arrow" />
                         </a>

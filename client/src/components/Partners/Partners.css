@@ -6,6 +6,11 @@
     gap: 2rem;
     overflow: hidden;
 }
+.partners img{
+    width: 8rem;
+    height: 5rem;
+    margin-right: 0.8rem;
+}
 .partners-top,
 .partners-bottom {
     display: flex;

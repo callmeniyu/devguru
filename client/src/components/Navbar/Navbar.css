@@ -50,8 +50,7 @@
     }
     .navbar-items li hr {
         display: block;
-
-
+        border: 1px solid rgb(238, 238, 238);
     }
     .navbar-btn {
         align-self: center;

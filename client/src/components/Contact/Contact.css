@@ -147,4 +147,10 @@
     .contact .section-header{
         width: 120%;
     }
+    .contact-alert-div{
+        right: 0;
+        width: auto;
+        left: 0;
+        margin-right: 0.5rem;
+    }
 }

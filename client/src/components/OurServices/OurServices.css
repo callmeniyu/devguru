@@ -28,7 +28,16 @@
 .services-item a:hover{
     background-color: rgb(226, 226, 226);
 }
-.services-item a:focus{
+.service-active a:hover{
+    background-color: var(--theme-blue);
+
+}
+/* .services-item a:focus{
+    background-color: var(--theme-blue);
+    color: white;
+    border-bottom: 5px solid #aca1fc;
+} */
+.service-active a{
     background-color: var(--theme-blue);
     color: white;
     border-bottom: 5px solid #aca1fc;
@@ -119,5 +128,8 @@
     }
     .service-img{
         margin-top: 2rem;
+    }
+    .services-item a:hover{
+        background-color: var(--theme-blue);
     }
 }
