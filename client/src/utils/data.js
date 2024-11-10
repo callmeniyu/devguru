@@ -19,7 +19,7 @@ import testimonial_img5 from "../assets/images/testimonial_img5.jpg"
 export const features = [
     {
         id: 1,
-        title: "Proffesional",
+        title: "Professional",
         description:
             "We deliver exceptionally professional services that not only meet but exceed your expectations, ensuring your complete satisfaction.",
         points: [
@@ -113,7 +113,7 @@ export const services = [
         id: 2,
         title: "Frontent Development",
         description:
-            "Enhance your online presence with bespoke websites designed to meet your unique needs. At Gurudev, we transform your vision into reality using the latest technology and a user-centric approach.",
+            "Create stunning, user-friendly websites that captivate your audience and drive engagement.",
         points: [
             "Visually appealing and brand-aligned designs.",
             "Intuitive navigation and user interface.",

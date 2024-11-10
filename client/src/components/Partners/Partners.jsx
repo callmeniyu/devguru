@@ -9,7 +9,7 @@ import edinburgh from "../../assets/svg/edinburgh-colored.svg"
 import kobe from "../../assets/svg/KOBE-colored.svg"
 import Ljubljana from "../../assets/svg/Ljubljana-colored.svg"
 import memphis from "../../assets/svg/Oslo-colored.svg"
-import oslo from "../../assets/svg/github.svg"
+import oslo from "../../assets/svg/Bern-colored.svg"
 import venice from "../../assets/svg/venice-colored.svg"
 import "./Partners.css"
 

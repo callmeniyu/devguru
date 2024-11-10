@@ -1,4 +1,4 @@
-import React, { useState, Suspense } from 'react';
+import React, {  Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Helmet from "react-helmet";
 import HashLoader from "react-spinners/HashLoader";
@@ -7,7 +7,6 @@ import './index.css'; // Import your global styles
 const Home = React.lazy(() => import("./pages/Home/Home"));
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <BrowserRouter>
